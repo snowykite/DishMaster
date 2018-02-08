@@ -36,5 +36,5 @@ function sendPage(fileName, result)  {
 module.exports.home = function(request, response) {
     sendPage('index.html', response);
     // response.render will go to views directory to find module.
-    // response.render('index.html', response);
+    // response.render('index', response);
 }
