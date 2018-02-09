@@ -15,5 +15,7 @@
     "morgan": "~1.9.0",
     "serve-favicon": "~2.4.5"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "jade": "^1.11.0"
+  }
 }
