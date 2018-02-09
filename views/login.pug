@@ -1,0 +1,25 @@
+html
+  body
+    .form
+      ul.tab-group
+        li.tab.active
+          a(href="signup") Sign Up
+        li.tab
+          a(href="login") Log In
+      .tab-content
+        #login
+          h1 Welcome!
+          form(action="/" method="post")
+            .field-wrap
+              label
+                | Email Address
+                span.req *
+              input(type="email" required="" autocomplete="off")
+            .field-wrap
+              label
+                | Password
+                span.req *
+              input(type="password" required="" autocomplete="off")
+            p.forgot
+              a(href="#") Forgot Password?
+            button.button.button-block Log In
