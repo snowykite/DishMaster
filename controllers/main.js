@@ -35,5 +35,5 @@
  */
 module.exports.home = function(request, response) {
     // response.render will go to views directory to find module.
-    response.render('index', {title: 'Express'});
+    response.render('index', {title: 'DishMaster'});
 }
