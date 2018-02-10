@@ -49,5 +49,5 @@ module.exports.login = function(request, response) {
  * GET signup page.
  */
 module.exports.signup = function(request, response) {
-    response.render('signup');
+    response.render('signup', {title: 'Sign Up'});
 }
