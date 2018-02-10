@@ -1,34 +1,42 @@
 html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/common.css')
+    link(rel='stylesheet', href='/stylesheets/signup-login.css')
+    link(rel='stylesheet', href='/stylesheets/forms.css')
+    script(src="/scripts/jquery-3.3.1.min.js")
+    script(src="/scripts/forms.js")
   body
-    .form
-      ul.tab-group
-        li.tab.active
-          a(href="signup") Sign Up
-        li.tab
-          a(href="login") Log In
-      .tab-content
-        #signup
-          h1 Sign Up for Free
-          form(action="/" method="post")
-            .top-row
+    .bg-holder
+      .form
+        ul.tab-group
+          li.tab.active
+            a(href="signup") Sign Up
+          li.tab
+            a(href="login") Log In
+        .tab-content
+          #signup
+            h1 Join Dish Master Now!
+            form(action="/" method="post")
+              .top-row
+                .field-wrap
+                  label
+                    | First Name
+                    span.req *
+                  input(type="text" required="" autocomplete="off")
+                .field-wrap
+                  label
+                    | Last Name
+                    span.req *
+                  input(type="text" required="" autocomplete="off")
               .field-wrap
                 label
-                  | First Name
+                  | Email Address
                   span.req *
-                input(type="text" required="" autocomplete="off")
+                input(type="email" required="" autocomplete="off")
               .field-wrap
                 label
-                  | Last Name
+                  | Password
                   span.req *
-                input(type="text" required="" autocomplete="off")
-            .field-wrap
-              label
-                | Email Address
-                span.req *
-              input(type="email" required="" autocomplete="off")
-            .field-wrap
-              label
-                | Set A Password
-                span.req *
-              input(type="password" required="" autocomplete="off")
-            button.button.button-block(type="submit") Get Started
+                input(type="password" required="" autocomplete="off")
+              button.button.button-block(type="submit") Get Started
