@@ -25,10 +25,14 @@ $(function(){
                 email: email,
                 password: password,
             },
-            function (data, status) {
-              alert("Data: " + data + "\nStatus: " + status);
+            function (result) {
+                $('.form').html(result);
             }
-        );    
+        ).done(function() {
+            console.log('finished.');
+        }).fail(function() {
+            console.log('Oops, something went wrong.');
+        });
     }
 
     /**
@@ -52,10 +56,14 @@ $(function(){
                 email: email,
                 password: password,
             },
-            function (data, status) {
-                alert("Data: " + data + "\nStatus: " + status);
+            function (result) {
+                $('.form').html(result);
             }
-        );
+        ).done(function() {
+            console.log('finished.')
+        }).fail(function() {
+            console.log("Oops, something went wrong.")
+        });
     }
 
     /**
