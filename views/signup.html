@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="/stylesheets/common.css"/>
+    <link rel="stylesheet" href="/stylesheets/signup-login.css"/>
+    <link rel="stylesheet" href="/stylesheets/forms.css"/>
+    <script src="/scripts/jquery-3.3.1.min.js"></script>
+    <script src="/scripts/forms.js"></script>
+  </head>
+  <body>
+    <div class="bg-holder">
+      <div class="form">
+        <ul class="tab-group">
+          <li class="tab active"><a href="signup">Sign Up</a></li>
+          <li class="tab"><a href="login">Log In</a></li>
+        </ul>
+        <div class="tab-content">
+          <div id="signup">
+            <h1>Join Dish Master Now!</h1>
+            <form action="/" method="post">
+              <div class="top-row">
+                <div class="field-wrap">
+                  <label>First Name<span class="req">*</span></label>
+                  <input type="text" required="" autocomplete="off"/>
+                </div>
+                <div class="field-wrap">
+                  <label>Last Name<span class="req">*</span></label>
+                  <input type="text" required="" autocomplete="off"/>
+                </div>
+              </div>
+              <div class="field-wrap">
+                <label>Email Address<span class="req">*</span></label>
+                <input type="email" required="" autocomplete="off"/>
+              </div>
+              <div class="field-wrap">
+                <label>Password<span class="req">*</span></label>
+                <input type="password" required="" autocomplete="off"/>
+              </div>
+              <button class="button button-block" type="submit">Get Started</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
