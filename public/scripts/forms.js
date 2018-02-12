@@ -1,5 +1,5 @@
 //REVIEW: Encrypting in front end is an interesting idea, however, please check this article for reasons not to do so https://www.zhihu.com/question/25539382
-
+// var ajaxHandler = require('./ajaxHandler');
 
 $(function(){
 
@@ -20,28 +20,18 @@ $(function(){
     function login() {
         var email = $('#email').val();
         var password = $('#password').val();
-        password = md5(email + md5(password));
 
         // The request parameters
         var url = '';
-        $.post(
-            url,
-            {
-                email: email,
-                password: password,
-            },
-            function (result) {
-                $('.form').html(result);
-            }
-        ).done(function() {
-            console.log('finished.');
-        }).fail(function() {
-            console.log('Oops, something went wrong.');
-        });
+        var postData = {
+            email: email,
+            password: password
+        };
+        ajaxHandler.postHandler(url, postData);
     }
 
 
-    //REVIEW: If you look into the code below and above, you'll find duplicate, which should be dismissed as much as we can. Maybe you can try to create a "template method" to submit form through ajax. 
+    //REVIEW: If you look into the code below and above, you'll find duplicate, which should be dismissed as much as we can. Maybe you can try to create a "template method" to submit form through ajax.
     /**
      * signup
      */
@@ -51,27 +41,18 @@ $(function(){
         var email = $('#email').val();
         var password = $('#password').val();
 
-        password = md5(firstname + lastname + md5(password));
-
         // The request parameters
         var url = '';
-        $.post(
-            url,
-            {
-                firstname: firstname,
-                lastname: lastname,
-                email: email,
-                password: password,
-            },
-            function (result) {
-                $('.form').html(result);
-            }
-        ).done(function() {
-            console.log('finished.')
-        }).fail(function() {
-            console.log("Oops, something went wrong.")
-        });
+        var postData = {
+            firstname: firstname,
+            lastname: lastname,
+            email: email,
+            password: password
+        };
+        ajaxHandler.postHandler(url, postData);
     }
+    
+    
 
     /**
      * handle keyup, blur, and focus animation for labels of signup and login form
@@ -108,4 +89,3 @@ $(function(){
      */
     init();
 });
-
