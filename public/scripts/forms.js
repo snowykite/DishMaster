@@ -1,3 +1,6 @@
+//REVIEW: Encrypting in front end is an interesting idea, however, please check this article for reasons not to do so https://www.zhihu.com/question/25539382
+
+
 $(function(){
 
     /**
@@ -9,6 +12,8 @@ $(function(){
         $('sign-up-btn').addEventListener('click', signup);
     }
 
+
+    //REVIEW: The name of this file is forms.js, which usually means it contains functions that can be utilized through the whole project. Therefore, it's better to put functions that in charge of specific form into seperate module, e.g. login.js
     /**
      * login
      */
@@ -35,6 +40,8 @@ $(function(){
         });
     }
 
+
+    //REVIEW: If you look into the code below and above, you'll find duplicate, which should be dismissed as much as we can. Maybe you can try to create a "template method" to submit form through ajax. 
     /**
      * signup
      */
