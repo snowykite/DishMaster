@@ -8,8 +8,8 @@ $(function(){
      */
     function init() {
         // Register event listeners
-        $('login-btn').addEventListener('click', login);
-        $('sign-up-btn').addEventListener('click', signup);
+        $('login-btn').on('click', login);
+        $('sign-up-btn').on('click', signup);
     }
 
 
