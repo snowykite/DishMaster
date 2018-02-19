@@ -19,3 +19,10 @@ module.exports.login = function(request, response) {
 module.exports.signup = function(request, response) {
     response.render('signup', {title: 'Sign Up'});
 }
+
+/*
+ * GET search page.
+ */
+module.exports.search = function(request, response) {
+    response.render('search', {title: 'Search'});
+}

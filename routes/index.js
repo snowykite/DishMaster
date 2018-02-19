@@ -8,6 +8,8 @@ router.get('/', ctrlMain.home);
 router.get('/login', ctrlMain.login);
 /* GET signup page. */
 router.get('/signup', ctrlMain.signup);
+/* GET search page. */
+router.get('/search', ctrlMain.search);
 
 
 module.exports = router;
