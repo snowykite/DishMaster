@@ -10,6 +10,8 @@ router.get('/login', ctrlMain.login);
 router.post('/login', ctrlMain.post_login);
 /* GET signup page. */
 router.get('/signup', ctrlMain.signup);
+/* POST signup page. */
+router.post('/signup', ctrlMain.post_signup);
 
 
 module.exports = router;

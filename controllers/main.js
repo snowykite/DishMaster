@@ -26,3 +26,10 @@ module.exports.post_login = function(request, response) {
 module.exports.signup = function(request, response) {
     response.render('signup', {title: 'Sign Up'});
 }
+
+/*
+ * POST signup page.
+ */
+module.exports.post_signup = function(request, response) {
+    response.render('login', { message: "Please log in!"});
+}

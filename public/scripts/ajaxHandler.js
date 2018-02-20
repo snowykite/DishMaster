@@ -1,5 +1,5 @@
 
-module.exports.postHandler = function (url, params) {
+const postHandler = function (url, params) {
     $.post(
         url,
         params,
@@ -14,7 +14,7 @@ module.exports.postHandler = function (url, params) {
 }
 
 
-module.exports.getHandler = function (url) {
+const getHandler = function (url) {
     $.get(
         url,
         function (data) {
