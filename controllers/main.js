@@ -14,15 +14,15 @@ module.exports.login = function(request, response) {
 }
 
 /*
+ * POST login page.
+ */
+module.exports.post_login = function(request, response) {
+    response.render('search');
+}
+
+/*
  * GET signup page.
  */
 module.exports.signup = function(request, response) {
     response.render('signup', {title: 'Sign Up'});
-}
-
-/*
- * GET search page.
- */
-module.exports.search = function(request, response) {
-    response.render('search', {title: 'Search'});
 }

@@ -6,10 +6,10 @@ var ctrlMain = require('../controllers/main');
 router.get('/', ctrlMain.home);
 /* GET login page. */
 router.get('/login', ctrlMain.login);
+/* POST login page. */
+router.post('/login', ctrlMain.post_login);
 /* GET signup page. */
 router.get('/signup', ctrlMain.signup);
-/* GET search page. */
-router.get('/search', ctrlMain.search);
 
 
 module.exports = router;
