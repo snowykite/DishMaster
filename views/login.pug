@@ -6,7 +6,7 @@ html
     link(rel="stylesheet" href="/stylesheets/forms.css")
     script(src="/scripts/jquery-3.3.1.min.js")
     script(src="/scripts/forms.js")
-      script(src="/scripts/ajaxHandler.js")
+    script(src="/scripts/signuploginValidation.js")
   body
     .bg-holder
       .form
@@ -18,18 +18,18 @@ html
         .tab-content
           #signup
             h1 Welcome Back!
-            h2=message
+            h2
             form(action="/login" method="post")
               .field-wrap
                 label
                   | Email Address
                   span.req *
-                input#email(type="email" name="email" required="" autocomplete="off")
+                input#email(name="email" type="email" required="" autocomplete="off")
               .field-wrap
                 label
                   | Password
                   span.req *
-                input#password(type="password" name="password" required="" autocomplete="off")
+                input#password(name="password" type="password" required="" autocomplete="off")
               p.forgot
                 a(href="#") Forgot Password?
               button#login-btn.button.button-block Log In
