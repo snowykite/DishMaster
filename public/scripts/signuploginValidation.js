@@ -21,7 +21,7 @@ $(function () {
 
     function emailValidate() {
         var email = $('#email').val();
-        emailPattern = /^.+@.+\..{2, 4}$/;
+        var emailPattern = /^.+@.+\..{2,4}$/;
         if (!email.match(emailPattern)) {
             alert("Invalid email address. Should be xxx@xxx.xx");
         }

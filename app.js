@@ -5,10 +5,12 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
+var multer = require('multer');
 
 var index = require('./routes/index');
 
 var app = express();
+var upload = multer();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -19,6 +21,7 @@ app.set('view engine', 'pug');
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(upload.array());
 app.use(cookieParser());
 app.use(session({
     secret: "String for encrypting cookies.",
