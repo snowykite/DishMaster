@@ -4,7 +4,6 @@ html
 		title Dish Master
 		link(rel="stylesheet" href="/stylesheets/bootstrap.css")
 		link(rel="stylesheet" href="/stylesheets/common.css")
-		link(rel="stylesheet" href="/stylesheets/signup-login.css")
 		link(rel="stylesheet" href="/stylesheets/home.css")
 		script(src="/scripts/jquery-3.3.1.min.js")
 		script(src="/scripts/bootstrap.bundle.js")
@@ -28,19 +27,23 @@ html
 			
 		.container
 			.row
-				.dms-left-panel.col-4
+				aside.dms-left-panel.col-md-3
 					.dms-filter-container
-						ul.dms-filters
-							li Filter
-							li Filter
-							li Filter
-							li Filter
-							li Filter
-							li Filter
-							li Filter
-				.dms-main-content.col-8
+						h3 Find Dishes
+						h5 Type
+							ul.dms-filters
+								li Filter
+								li Filter
+								li Filter
+						h5 Price
+							ul.dms-filters
+								li Filter
+								li Filter
+								li Filter
+				.dms-main-content.col-md-9
 					article Article
 		.dms-footer.footer
+			.container
 				p Footer
 
 

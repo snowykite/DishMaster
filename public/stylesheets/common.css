@@ -9,15 +9,13 @@
 html {
   overflow-y: scroll;
 }
+
 body {
   background: #ffffff;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Roboto', arial, helvetica, sans-serif;
 }
-p
+
+.text-white
 {
-	font-family: 'Titillium Web', sans-serif;
-}
-h1
-{
-	font-family: 'Titillium Web', sans-serif;
+	color: #ffffff;
 }
