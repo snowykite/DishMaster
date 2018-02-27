@@ -1,6 +1,6 @@
 var registeredUsers = [{
     email: "linxiaoran0210@gmail.com",
-    password: 111111,
+    password: "111111",
 }];
 
 module.exports.loggedIn = function (req, res, next) {
