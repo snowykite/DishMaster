@@ -1,5 +1,10 @@
+#dms-logo
+{
+	font-family: "Allura";
+}
 .dms-home-header
 {
+	position: relative;
 	height: 30rem;
 	background-image:url(/images/sushi-istock.gif);
 	-webkit-background-size: cover;
@@ -18,6 +23,12 @@
 {
 	background-color: #ffffff;
 }
+
+.dms-filters li
+{
+	list-style: none;
+}
+
 .dms-footer
 {
 	text-align: center;
