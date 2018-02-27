@@ -1,0 +1,29 @@
+.dms-home-header
+{
+	height: 30rem;
+	background-image:url(/images/sushi-istock.gif);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+.dms-home-header-txt
+{	
+	padding-top: 3rem;
+	font-size: 10rem;
+ 	font-family: "Allura";
+ 	opacity: 0.8;
+}
+
+.dms-left-panel
+{
+	background-color: #ffffff;
+}
+.dms-footer
+{
+	text-align: center;
+	background-color: #ffffff;
+}
+.dms-footer p
+{
+	margin-bottom: 0px;
+}
