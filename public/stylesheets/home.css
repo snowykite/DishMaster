@@ -39,15 +39,26 @@
     width: 16rem;
     border: 1px solid #262626;
 }
+.dms-filters
+{
+	padding-left: 0;
+    margin-bottom: 1.5rem;
+}
 
 .dms-filters li
 {
 	list-style: none;
+	margin-bottom: 0.5rem;
 }
 
 .dms-filter-container
 {
 	padding: 0 1rem;
+}
+
+.dms-filter-container h3
+{
+	margin-bottom: 1rem;
 }
 
 .footer

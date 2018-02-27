@@ -1,14 +1,100 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Dish Master</title>
-	<link rel="stylesheet" href="/stylesheets/common.css"/>
-    <link rel="stylesheet" href="/stylesheets/signup-login.css"/>
-    <link rel="stylesheet" href="/stylesheets/forms.css"/>
+  <head>
+    <title>Dish Master</title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="/stylesheets/common.css">
+    <link rel="stylesheet" href="/stylesheets/home.css">
     <script src="/scripts/jquery-3.3.1.min.js"></script>
-</head>
-<body>
-
-
-</body>
+    <script src="/scripts/bootstrap.bundle.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"><a class="navbar-brand" id="dms-logo" href="#">DM</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Find</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Bookmark</a></li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <div class="dms-home-header">
+      <h1 class="dms-home-header-txt">Your Next Meal</h1>
+    </div>
+    <div class="container">
+      <div class="row">
+        <aside class="dms-left-panel col-md-3">
+          <div class="dms-filter-container">
+            <form id="dishesFilter">
+              <h3>Find Dishes</h3>
+              <div class="container">
+                <h5>Type</h5>
+                <ul class="dms-filters">
+                  <li>
+                    <div class="form-check">
+                      <input class="form-check-input" id="typeCh" type="checkbox">
+                      <label class="form-check-label" for="typeCh">Chinese</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form-check">
+                      <input class="form-check-input" id="typeUS" type="checkbox">
+                      <label class="form-check-label" for="typeUS">American</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form-check">
+                      <input class="form-check-input" id="typeMex" type="checkbox">
+                      <label class="form-check-label" for="typeMex">Mexican</label>
+                    </div>
+                  </li>
+                </ul>
+                <h5>Price</h5>
+                <ul class="dms-filters">
+                  <li>
+                    <div class="form-check">
+                      <input class="form-check-input" id="priceAll" type="radio" name="priceFilter">
+                      <label class="form-check-label" for="priceAll">All</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form-check">
+                      <input class="form-check-input" id="price0_5" type="radio" name="priceFilter">
+                      <label class="form-check-label" for="price0_5">0 ~ 5 USD</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form-check">
+                      <input class="form-check-input" id="price5_10" type="radio" name="priceFilter">
+                      <label class="form-check-label" for="price5_10">5 ~ 10 USD</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form-check">
+                      <input class="form-check-input" id="price10_20" type="radio" name="priceFilter">
+                      <label class="form-check-label" for="price10_20">10 ~ 20 USD</label>
+                    </div>
+                  </li>
+                </ul>
+                <button class="btn btn-info" type="button">Search</button>
+              </div>
+            </form>
+          </div>
+        </aside>
+        <div class="dms-main-content col-md-9">
+          <article>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</article>
+          <article>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.</article>
+        </div>
+      </div>
+    </div>
+    <div class="dms-footer footer">
+      <div class="container">
+        <p>Footer</p>
+      </div>
+    </div>
+  </body>
 </html>
