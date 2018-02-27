@@ -13,7 +13,7 @@ module.exports.loggedIn = function (req, res, next) {
  */
 module.exports.home = function(request, response) {
     // response.render will go to views directory to find module.
-    response.render('login', {title: 'Login'});
+    response.render('home', {});
 }
 
 /*

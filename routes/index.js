@@ -12,6 +12,7 @@ router.post('/login', ctrlMain.post_login);
 router.get('/signup', ctrlMain.signup);
 /* POST signup page. */
 router.post('/signup', ctrlMain.post_signup);
-
+/* GET home page. */
+router.get('/home', ctrlMain.home);
 
 module.exports = router;
