@@ -13,7 +13,7 @@ module.exports.loggedIn = function (req, res, next) {
  */
 module.exports.home = function(request, response) {
     // response.render will go to views directory to find module.
-    response.render('home', {});
+    response.render('login', {});
 }
 
 /*
@@ -35,7 +35,7 @@ module.exports.post_login = function(request, response) {
         response.render('login', { message: "invalid credentials!"});
     } else {
         request.session.user = matches[0];
-        response.render('search', { email: request.session.user.email});
+        response.render('home', { email: request.session.user.email});
     }
 }
 
