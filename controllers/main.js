@@ -1,4 +1,7 @@
-var registeredUsers = [];
+var registeredUsers = [{
+    email: "linxiaoran0210@gmail.com",
+    password: 111111,
+}];
 
 module.exports.loggedIn = function (req, res, next) {
     if (req.session.user) {
@@ -27,6 +30,7 @@ module.exports.login = function(request, response) {
  * POST login page.
  */
 module.exports.post_login = function(request, response) {
+    console.log(request.body);
     var matches = registeredUsers.filter(function (user) {
         return (user.email === request.body.email) &&
                 (user.password === request.body.password);
