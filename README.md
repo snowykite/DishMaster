@@ -1,16 +1,20 @@
 # DishMaster
 
 ## Getting Started
-- cd to the project folder
-- run following script: 
+- Go to any directory and run script:
+```html
+
+```
+- Go to the project folder
+- Install required dependencies, run script: 
 ```html
 npm install
 ```
-- run following script: 
+- Run the project app, type script: 
 ```html
 npm start
 ```
-- open your browser and type:
+- Open your browser and type:
 ```html
 localhost:3000
 ```
