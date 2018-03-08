@@ -65,8 +65,10 @@ module.exports.post_signup = function(request, response) {
         if (matches.length > 0) {
             response.render('signup', { message: "Already registered, please log in!"});
         } else {
-            var newUser = { email: request.body.email,
-                            password: request.body.password };
+            var newUser = {
+                email: request.body.email,
+                password: request.body.password
+            };
             registeredUsers.push(newUser);
             response.render('login', { message: "Please log in!"});
         }
