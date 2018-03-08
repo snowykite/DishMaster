@@ -3,7 +3,7 @@
 ## Getting Started
 - Go to any directory and run script:
 ```html
-
+git clone https://github.com/siriustom/DishMaster.git
 ```
 - Go to the project folder
 - Install required dependencies, run script: 
