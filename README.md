@@ -5,7 +5,10 @@
 ```html
 git clone https://github.com/siriustom/DishMaster.git
 ```
-- Go to the project folder
+- Go to the project folder, run script:
+```html
+cd YourGitClonedDirectory/DishMaster
+```
 - Install required dependencies, run script: 
 ```html
 npm install
