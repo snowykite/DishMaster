@@ -24,3 +24,5 @@ localhost:3000
 - You are good to go:
 
 <img width="1277" alt="screen shot 2018-03-08 at 9 09 24 am" src="https://user-images.githubusercontent.com/24384948/37165029-7b1c21da-22b0-11e8-8019-5b80f179560a.png">
+
+<img width="1145" alt="screen shot 2018-03-08 at 10 56 13 am" src="https://user-images.githubusercontent.com/24384948/37170334-6f7be22a-22bf-11e8-9249-187a44bf5b9f.png">
