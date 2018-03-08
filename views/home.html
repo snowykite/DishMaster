@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dish Master</title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="/stylesheets/common.css">
+    <link rel="stylesheet" href="/stylesheets/home.css">
+    <link rel="stylesheet" href="/stylesheets/jquery-ui.min.css">
+    <script src="/scripts/jquery-3.3.1.min.js"></script>
+    <script src="/scripts/bootstrap.bundle.js"></script>
+    <script src="/scripts/jquery-ui.min.js"></script>
+    <script src="/scripts/resizable.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark"><a class="navbar-brand" id="dms-logo" href="#">DM</a>
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Find</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Bookmark</a></li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+<div class="dms-home-header">
+    <h1 class="dms-home-header-txt">Your Next Meal</h1>
+</div>
+<div class="container">
+    <div class="row">
+        <aside class="dms-left-panel col-md-3">
+            <div class="dms-filter-container">
+                <form id="dishesFilter">
+                    <h3>Find Dishes</h3>
+                    <div class="container">
+                        <h5>Type</h5>
+                        <ul class="dms-filters">
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" id="typeCh" type="checkbox">
+                                    <label class="form-check-label" for="typeCh">Chinese</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" id="typeUS" type="checkbox">
+                                    <label class="form-check-label" for="typeUS">American</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" id="typeMex" type="checkbox">
+                                    <label class="form-check-label" for="typeMex">Mexican</label>
+                                </div>
+                            </li>
+                        </ul>
+                        <h5>Price</h5>
+                        <ul class="dms-filters">
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" id="priceAll" type="radio" name="priceFilter">
+                                    <label class="form-check-label" for="priceAll">All</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" id="price0_5" type="radio" name="priceFilter">
+                                    <label class="form-check-label" for="price0_5">0 ~ 5 USD</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" id="price5_10" type="radio" name="priceFilter">
+                                    <label class="form-check-label" for="price5_10">5 ~ 10 USD</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" id="price10_20" type="radio" name="priceFilter">
+                                    <label class="form-check-label" for="price10_20">10 ~ 20 USD</label>
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="btn btn-info" type="button">Search</button>
+                    </div>
+                </form>
+            </div>
+        </aside>
+        <div class="dms-main-content col-md-9">
+            <article id="resizeMe"><span></span>Resize me</article>
+            <article>This is a website for you when you don't know where to eat.</article>
+        </div>
+    </div>
+</div>
+<div class="dms-footer footer">
+    <div class="container">
+        <p>Footer</p>
+    </div>
+</div>
+</body>
+</html>

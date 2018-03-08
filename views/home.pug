@@ -5,11 +5,14 @@ html
 		link(rel="stylesheet" href="/stylesheets/bootstrap.css")
 		link(rel="stylesheet" href="/stylesheets/common.css")
 		link(rel="stylesheet" href="/stylesheets/home.css")
+		link(rel="stylesheet" href="/stylesheets/jquery-ui.min.css")
 		script(src="/scripts/jquery-3.3.1.min.js")
 		script(src="/scripts/bootstrap.bundle.js")
+		script(src="/scripts/jquery-ui.min.js")
+		script(src="/scripts/resizable.js")
 	body
 		nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
-			a#dms-logo.navbar-brand(href='#') DM
+			a#dms-logo.navbar-brand(href="#") DM
 			.collapse.navbar-collapse
 				ul.navbar-nav.mr-auto
 					li.nav-item.active
@@ -19,12 +22,10 @@ html
 					li.nav-item
 						a.nav-link(href="#") Bookmark
 				form.form-inline.my-2.my-lg-0
-						input.form-control.mr-sm-2(type="search" placeholder="Search" aria-label="Search")
-						button.btn.btn-outline-info.my-2.my-sm-0(type="submit") Search
-
+					input.form-control.mr-sm-2(type="search" placeholder="Search" aria-label="Search")
+					button.btn.btn-outline-info.my-2.my-sm-0(type="submit") Search
 		.dms-home-header
-				h1.dms-home-header-txt Your Next Meal
-			
+			h1.dms-home-header-txt Your Next Meal
 		.container
 			.row
 				aside.dms-left-panel.col-md-3
@@ -64,12 +65,12 @@ html
 										.form-check
 											input#price10_20.form-check-input(type="radio" name="priceFilter")
 											label.form-check-label(for="price10_20") 10 ~ 20 USD
-
 								button.btn.btn-info(type="button") Search
 				.dms-main-content.col-md-9
-					article At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
-					article On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.
-
+					article#resizeMe
+						span
+						| Resize me
+					article This is a website for you when you don't know where to eat.
 		.dms-footer.footer
 			.container
 				p Footer
