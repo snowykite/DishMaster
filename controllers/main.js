@@ -55,6 +55,15 @@ module.exports.signup = function(req, res) {
 }
 
 /*
+ * GET Add Dish page.
+ */
+module.exports.addDish = function(req, res) {
+    res.render('add_dish', {title: 'Add Dish'});
+}
+
+
+
+/*
  * POST signup page.
  */
 module.exports.post_signup = function(req, res) {

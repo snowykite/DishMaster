@@ -9,7 +9,6 @@ html
 		script(src="/library/jquery-3.3.1.min.js")
 		script(src="/library/bootstrap.bundle.js")
 		script(src="/library/jquery-ui.min.js")
-		script(src="/scripts/resizable.js")
 		script(src="/scripts/ajaxTab.js")
 	body
 		nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
@@ -17,7 +16,9 @@ html
 			.collapse.navbar-collapse
 				ul.navbar-nav.mr-auto
 					li.nav-item.active
-						a.nav-link(href="#") Home
+						a.nav-link(href="/home") Home
+					li.nav-item
+						a.nav-link(href="/addDish") Add Dish
 					li.nav-item
 						a.nav-link(href="#") Find
 					li.nav-item
@@ -76,10 +77,6 @@ html
 								a(href="/dishes/recommended") Recommended by Editors
 							li
 								a(href="/dishes/bookmarked") Bookmarked
-					article#resizeMe
-						span
-						| Resize me
-					article This is a website for you when you don't know where to eat.
 
 		
 		.dms-footer.footer
