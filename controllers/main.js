@@ -3,14 +3,6 @@ var registeredUsers = [{
     password: "111111",
 }];
 
-module.exports.loggedIn = function (req, res, next) {
-    if (req.session.user) {
-        //proceed if the user is logged in
-        next();
-    } else {
-        res.send("you must first log in.");
-    }
-}
 /*
  * GET home page.
  */
