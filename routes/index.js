@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var ctrlMain = require('../controllers/main');
+var dishes = require('../controllers/dishes');
 
 /* GET home page. */
 router.get('/', ctrlMain.home);
@@ -14,5 +15,9 @@ router.get('/signup', ctrlMain.signup);
 router.post('/signup', ctrlMain.post_signup);
 /* GET home page. */
 router.get('/home', ctrlMain.home);
+
+router.get('/dishes/recommended', dishes.recommendedDishes);
+
+router.get('/dishes/bookmarked', dishes.bookmarkedDishes);
 
 module.exports = router;
