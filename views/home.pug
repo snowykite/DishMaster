@@ -6,9 +6,9 @@ html
 		link(rel="stylesheet" href="/stylesheets/common.css")
 		link(rel="stylesheet" href="/stylesheets/home.css")
 		link(rel="stylesheet" href="/stylesheets/jquery-ui.min.css")
-		script(src="/scripts/jquery-3.3.1.min.js")
-		script(src="/scripts/bootstrap.bundle.js")
-		script(src="/scripts/jquery-ui.min.js")
+		script(src="/library/jquery-3.3.1.min.js")
+		script(src="/library/bootstrap.bundle.js")
+		script(src="/library/jquery-ui.min.js")
 		script(src="/scripts/resizable.js")
 		script(src="/scripts/ajaxTab.js")
 	body
@@ -68,18 +68,22 @@ html
 											label.form-check-label(for="price10_20") 10 ~ 20 USD
 								button.btn.btn-info(type="button") Search
 				.dms-main-content.col-md-9
+					#dms-main-tabs
+						ul
+							li
+								a(href="#main-tabs-all") All
+							li
+								a(href="/dishlist/recommended") Recommended by Editors
+							li
+								a(href="/dishlist/bookmarked") Bookmarked
+						#main-tabs-all
+							p This is the whole list of dishes
 					article#resizeMe
 						span
 						| Resize me
 					article This is a website for you when you don't know where to eat.
-		#ajaxTab
-			ul.nav.nav-tabs
-				li
-					a(href="chinese.pug/chinese.html") Chinese Cuisine
-				li
-					a(href="american.pug") American Cuisine
-				li
-					a(href="mexican.pug") Mexican Cuisine
+
+		
 		.dms-footer.footer
 			.container
 				p Footer
