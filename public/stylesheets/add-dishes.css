@@ -10,7 +10,7 @@
 	height: 200px;
 }
 
-#selectedTagContainer span
+.tags-container span
 {
 	padding: 10px;
 }
