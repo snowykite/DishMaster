@@ -16,6 +16,8 @@ router.post('/signup', ctrlMain.post_signup);
 /* GET home page. */
 router.get('/home', ctrlMain.home);
 
+router.get('/dishes/all', dishes.allDishes);
+
 router.get('/dishes/recommended', dishes.recommendedDishes);
 
 router.get('/dishes/bookmarked', dishes.bookmarkedDishes);

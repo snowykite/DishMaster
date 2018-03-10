@@ -1,0 +1,6 @@
+.container
+	ul.dms-dish-list
+		each dish in dishList
+			li
+				h3= dish["name"]
+				p.location= dish.restaurant
