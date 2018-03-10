@@ -4,10 +4,20 @@
 	padding: 10px;
 	cursor: move;
 }
+.dms-tag > span
+{
+	background-color: #cc0000;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}
 #selectedTags
 {
 	width: 50%;
 	height: 200px;
+	min-height: 100px;
+	min-width: 100px;
+	overflow: auto;
 }
 
 .tags-container span
