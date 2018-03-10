@@ -5,11 +5,13 @@ html
 		link(rel="stylesheet" href="/stylesheets/bootstrap.css")
 		link(rel="stylesheet" href="/stylesheets/common.css")
 		link(rel="stylesheet" href="/stylesheets/home.css")
+		link(rel="stylesheet" href="/stylesheets/add-dishes.css")
 		link(rel="stylesheet" href="/stylesheets/jquery-ui.min.css")
 		script(src="/library/jquery-3.3.1.min.js")
 		script(src="/library/bootstrap.bundle.js")
 		script(src="/library/jquery-ui.min.js")
 		script(src="/scripts/resizable.js")
+		script(src="/scripts/addDish.js")
 	body
 		nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
 			a#dms-logo.navbar-brand(href="#") DM
@@ -30,10 +32,23 @@ html
 			h1.dms-home-header-txt Your Next Meal
 		.container
 			.row
-				.dms-main-content.col-md-9
-					article#resizeMe
+				.dms-main-content.col-md-12
+					div
+						.dms-tag
+							span Spicy
+						.dms-tag
+							span Expensive
+						.dms-tag
+							span Chinese
+						.dms-tag
+							span Japanese
+						.dms-tag
+							span Indian
+					#selectedTags.resizeMe
 						span
-						| All Tags
+						| All Selected Tags
+						div#selectedTagContainer
+
 						
 
 		

@@ -1,7 +1,7 @@
 $(init);
 
 function init() {
-    $("#resizeMe").button({
+    $(".resizeMe").button({
         class: {
             "ui-button": "highlight"
         }

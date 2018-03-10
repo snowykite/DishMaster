@@ -1,0 +1,16 @@
+.dms-tag
+{
+	display: inline-block;
+	padding: 10px;
+	cursor: move;
+}
+#selectedTags
+{
+	width: 50%;
+	height: 200px;
+}
+
+#selectedTagContainer span
+{
+	padding: 10px;
+}
