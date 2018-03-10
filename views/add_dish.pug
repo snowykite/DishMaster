@@ -7,6 +7,7 @@ html
 		link(rel="stylesheet" href="/stylesheets/home.css")
 		link(rel="stylesheet" href="/stylesheets/add-dishes.css")
 		link(rel="stylesheet" href="/stylesheets/jquery-ui.min.css")
+		link(rel="stylesheet" href="/stylesheets/jquery-ui.theme.css")
 		script(src="/library/jquery-3.3.1.min.js")
 		script(src="/library/bootstrap.bundle.js")
 		script(src="/library/jquery-ui.min.js")
@@ -48,23 +49,43 @@ html
 					#selectedTags.resizeMe
 						span
 						| All Selected Tags
-						div#selectedTagContainer
+						.tags-container
 			.row
 				.dms-main-content.col-md-12
 					form#newDishForm
 						h3 Dish Details
-						div.dms-input-container
+						.dms-input-container
 							label.form-check-label(for="dishNameInput") Dish Name:
 							input#dishNameInput(name="dishName" type="text" required="" autocomplete="off")
 
-						div.dms-input-container
+						.dms-input-container
 							label.form-check-label(for="restaurantInput") Restaurant Name:
 							input#restaurantInput(name="restaurantName" type="text" required="" autocomplete="off")
 						
-						div.dms-input-container
+						.dms-input-container
 							label.form-check-label(for="dateInput") Tasted Date:
 							input#dateInput.dms-date-picker(name="dateTasted" type="text" required="" autocomplete="off")
+			.row
+				.dms-main-content.col-md-12
+					button.btn.btn-info(type="button") Reset
+					button.btn.btn-info(type="button") Confirm
+
 
 		.dms-footer.footer
 			.container
 				p Footer
+
+		#confirmDialog(title="Dish Details")
+			div 
+				p Dish Label: 
+				.tags-container
+			div
+				p Dish Name:
+				span#dishNameConfirm
+			div
+				p Restaurant Name:
+				span#restaurantConfirm
+			div
+				p Tasted Date:
+				span#dateConfirm
+
