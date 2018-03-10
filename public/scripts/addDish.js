@@ -5,7 +5,7 @@ $(function(){
     	accept: ".dms-tag",	
       	drop: function( event, ui ) {
         	$( this )
-        	.children("#selectedTagContainer")
+        	.children(".tags-container")
 			.append(ui.draggable.find("span"));
     	}
     });
@@ -13,4 +13,13 @@ $(function(){
 
     // date pickers
     $( ".dms-date-picker" ).datepicker();
+
+    // confirm dialog
+    $( "#confirmDialog" ).dialog({
+    	autoOpen: false
+    });
+
+    $(document).on("click", "#confirmDishDetails", function(){
+    	$( "#confirmDialog" ).dialog( "open" );
+    });
 });
