@@ -1,4 +1,5 @@
 $(function(){
+	// drag and drop tags
 	$( ".dms-tag" ).draggable();
     $( "#selectedTags" ).droppable({
     	accept: ".dms-tag",	
@@ -10,5 +11,6 @@ $(function(){
     });
 
 
-
+    // date pickers
+    $( ".dms-date-picker" ).datepicker();
 });

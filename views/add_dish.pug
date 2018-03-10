@@ -33,6 +33,7 @@ html
 		.container
 			.row
 				.dms-main-content.col-md-12
+					h3 Dish Tags
 					div
 						.dms-tag
 							span Spicy
@@ -48,10 +49,22 @@ html
 						span
 						| All Selected Tags
 						div#selectedTagContainer
+			.row
+				.dms-main-content.col-md-12
+					form#newDishForm
+						h3 Dish Details
+						div.dms-input-container
+							label.form-check-label(for="dishNameInput") Dish Name:
+							input#dishNameInput(name="dishName" type="text" required="" autocomplete="off")
 
+						div.dms-input-container
+							label.form-check-label(for="restaurantInput") Restaurant Name:
+							input#restaurantInput(name="restaurantName" type="text" required="" autocomplete="off")
 						
+						div.dms-input-container
+							label.form-check-label(for="dateInput") Tasted Date:
+							input#dateInput.dms-date-picker(name="dateTasted" type="text" required="" autocomplete="off")
 
-		
 		.dms-footer.footer
 			.container
 				p Footer

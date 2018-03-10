@@ -14,3 +14,12 @@
 {
 	padding: 10px;
 }
+
+#newDishForm
+{
+	margin-top: 20px;
+}
+#newDishForm .form-check-label
+{
+	width: 180px;
+}
